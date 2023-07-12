@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1> Formulario de Contacto </h1>
+
+    <form id="formulario-contacto">
+
+        <label for="nombre"> Nombre </label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+
+        <label for="email"> Email </label>
+        <input type="email" id="email" required>
+
+        <label for="mensaje"> Mensaje </label>
+        <textarea id="mensaje" required></textarea>
+
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Borrar</button>
+
+    </form>
+
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
